@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Front End I</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <h4>Grandes ofertas en comederos</h4>
+            <ul>
+                <li>Español <i class="fas fa-chevron-down simDesplegable"></i></li>
+                <li>ARG$ <i class="fas fa-chevron-down simDesplegable"></i></li>
+            </ul>
+        </div>
+        <div class="headerButtom">
+            <div class="logo">
+                <img src="img/Cat.png" alt="Imagen de Gatito" />
+                <h1><span>Front</span>Cat&Dog</h1>
+                <img src="img/Dog.png" alt="Imagen de Perrito" />
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#"><i class="fas fa-paw patita"></i>categorias</a> </li>
+                    <li><a href="#"><i class="fas fa-paw patita"></i>pets</a></li>
+                    <li><a href="#"><i class="fas fa-paw patita"></i>Sobre nosotros</a></li>
+                    <li><a href="#"><i class="fas fa-paw patita"></i>Contáctanos</a></li>
+                </ul>
+                <i class="fas fa-bars menuHamburguesa"></i>
+            </nav>
+            <div class="headerUsuarioCanastita">
+                <a href="#"><i class="fas fa-user usuario"></i></a>
+                <a href="#"><i class="fas fa-shopping-basket canastita"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedorImg">
+            <div class="banner gato">
+                <h3>Comida de gato</h3>
+                <a href="#">30% de descuento</a>
+            </div>
+            <div class="banner perro">
+                <h3>Comida de perro</h3>
+                <a href="#">30% de descuento</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerTop">
+            <div class="footerEmail">
+                <img src="./img/SobreEmail.svg" alt="Imagen de sobre de email">
+                <h4>Suscríbete para más novedades</h4>
+            </div>
+            <div>
+                <form class="formularioEmail" action="index.html" method="POST">
+                    <input class="campoEmail" type="email" id="email" name="email"
+                        placeholder="Ingresá tu correo electrónico" required>
+                    <input class="buttonSuscribir" type="submit" value="Suscribirme" id="suscribirme">
+                </form>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Todos los derechos reservados Front End</p>
+        </div>
+    </footer>
+</body>
+</html>

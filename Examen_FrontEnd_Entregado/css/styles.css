@@ -1,0 +1,182 @@
+/*CSS Examen Front End I*/
+
+/*********************VAR********************/
+:root {
+    --color1: #F0A83E;;
+    --color2: #222222;
+    --color3: #E5E5E5;
+    --color4: #FFFFFF;
+    --color5: #3C2313;
+    --color6: #F3F3F3;
+}
+/*********************SETEO "UNIVERSAL"********************/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  
+    margin: 0;
+    padding: 0;
+}
+/*********************HEADER********************/
+.headerTop {
+    display: flex;
+    background-color: var(--color2);
+    color: var(--color6);
+    justify-content: space-between;
+    padding: 4px 30px;
+    align-items: center;
+}
+
+.headerTop ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.headerTop ul li {
+    margin: 0 10px;  
+}
+
+.headerButtom {
+    display: flex;
+    background-color: var(--color1);
+    justify-content: space-between;
+    color: var(--color4);
+    padding: 0 19px;
+    align-items: center;
+    height: 62px;
+}
+
+.logo {
+    display: flex;
+}
+
+span {
+    color: var(--color5)
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+.usuario, .canastita{
+    color: var(--color6);
+    padding: 0 10px;
+}
+
+.headerButtom ul li {
+    margin: 0 10px;
+}
+.patita, .headerButtom ul li a {
+    color: var(--color6);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.headerUsuarioCanastita{
+    display: flex;
+}
+.menuHamburguesa {
+    display: none;
+}
+/*********************MAIN********************/
+
+.contenedorImg {
+    display: flex;
+    justify-content: space-around;
+    height: 574px;
+    align-items: center;
+}
+
+.banner {
+    width: 360px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner a {
+    background-color: var(--color1);
+    width: 100px;
+    height: 19.5px;
+    text-decoration: none;
+    font-size: 10px;
+    font-style: italic;
+    color: var(--color2);
+    border-radius: 4px;
+    text-align: center;   
+}
+h3 {
+    color: var(--color3);
+}
+.gato {
+    background-image: url('../img/Cat-background.png');
+    padding-left: 26px;
+}
+
+.perro {
+    background-image: url('../img/Dog-Background.png');
+    padding-left: 180px;
+}
+/*********************FOOTER********************/
+.footerTop {
+    background-color: var(--color1);
+    color: var(--color4);
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+.footerEmail{
+    display: flex;
+    
+}
+.campoEmail{
+    border-radius: 15px;
+    width: 265px;
+    height: 40px;
+
+}
+.footerBottom {
+    background-color: var(--color2);
+    text-align: center;
+    color: var(--color4);
+}
+
+.buttonSuscribir {
+    background-color: var(--color5);
+    border-radius: 15px;
+    width: 90px;
+    height: 40px;
+    color: var(--color4);
+    padding: 10px;
+}
+
+
+/*********************MEDIA QUERY********************/
+@media screen and (max-width: 480px){
+    header nav ul, .headerUsuarioCanastita {
+        display: none;
+    }
+    .headerTop{
+        font-size: 15px;
+    }
+    .menuHamburguesa {
+        color: var(--color4);
+        display: block;
+        font-size: 27px;
+    }
+    .contenedorImg {
+        display:flex;
+        flex-direction: column;
+    }
+    .footerTop {
+        display: flex;
+        flex-direction: column;
+    }
+    h4{
+        padding: 10px;;
+    }
+}
